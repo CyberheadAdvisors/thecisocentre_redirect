@@ -130,3 +130,17 @@ p { margin: 0 0 1em; }
 /* Section illustrations */
 .illus { display: block; width: 100%; max-width: 560px; height: auto; margin: 4px 0 20px; }
 .illus-small { max-width: 240px; }
+
+/* How we work: numbered stages, each split into what happens / you get / why it matters */
+.flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.flow-stage { background: var(--panel); border-radius: 10px; padding: 18px 20px; }
+.flow-stage h3 { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.flow-num { flex: 0 0 32px; width: 32px; height: 32px; border-radius: 50%; background: var(--navy); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 17px; }
+.flow-parts { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px 20px; margin: 0; }
+.flow-parts dt { font-size: 13px; letter-spacing: 0.04em; color: var(--muted); margin-top: 6px; }
+.flow-parts dd { margin: 0; }
+@media (min-width: 760px) {
+  .flow-parts { grid-template-columns: 9.5em minmax(0, 1fr); }
+  .flow-parts dt { margin-top: 3px; }
+}
+.flow-parts dt:last-of-type + dd { font-weight: 500; color: var(--navy-dark); }
