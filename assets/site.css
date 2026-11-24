@@ -144,3 +144,5 @@ p { margin: 0 0 1em; }
   .flow-parts dt { margin-top: 3px; }
 }
 .flow-parts dt:last-of-type + dd { font-weight: 500; color: var(--navy-dark); }
+
+.hero .hero-alt { margin: 14px 0 0; font-size: 15px; }
